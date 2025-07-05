@@ -4,8 +4,7 @@ import logging
 import numpy as np
 import cv2
 from pathlib import Path
-from skimage.io import imread, imsave
-from ..io.loaders import load_label_mask
+from skimage.io import imsave
 
 def outline_overlay(label_img: np.ndarray, flags: dict[int, str]) -> np.ndarray:
     """Create overlay image with colored outlines based on classification."""
