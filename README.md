@@ -9,15 +9,14 @@ A scientific tool for classifying melanocytes as live or dead based on microscop
 - **Flexible Input**: Support for various image formats and directory structures
 - **Visualization**: Generate overlay images showing classifications
 - **Scientific Reproducibility**: Detailed logging and parameter tracking
-- **Easy Installation**: pip-installable package with clear dependencies
 
 ## Installation
 
-### Install from source
+Clone the repository and install the required dependencies:
 ```bash
 git clone https://github.com/yourorg/melanocyte-classifier.git
 cd melanocyte-classifier
-pip install -e .
+pip install -r requirements.txt
 ```
 
 ## Quick Start
@@ -149,30 +148,6 @@ Existing scripts using the original `classify_melanocytes.py` will continue to w
 python classify_melanocytes.py /path/to/masks --overlay --workers 8
 ```
 
-## Development
-
-### Running Tests
-
-```bash
-pip install -e ".[dev]"
-pytest tests/
-```
-
-### Code Formatting
-
-```bash
-black melanocyte_classifier/
-flake8 melanocyte_classifier/
-```
-
-### Building Documentation
-
-```bash
-pip install -e ".[docs]"
-cd docs/
-make html
-```
-
 ## Citation
 
 If you use this tool in your research, please cite:
@@ -204,4 +179,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Added programmatic API
 - Enhanced documentation
 - Backwards compatibility maintained
-- Added pip installation support
