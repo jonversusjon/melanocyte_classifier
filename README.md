@@ -13,23 +13,11 @@ A scientific tool for classifying melanocytes as live or dead based on microscop
 
 ## Installation
 
-### Option 1: Install from PyPI (when published)
-```bash
-pip install melanocyte-classifier
-```
-
-### Option 2: Install from source
+### Install from source
 ```bash
 git clone https://github.com/yourorg/melanocyte-classifier.git
 cd melanocyte-classifier
 pip install -e .
-```
-
-### Option 3: Install dependencies manually
-```bash
-conda install -c conda-forge scikit-image opencv pandas tqdm tifffile
-# or
-pip install scikit-image opencv-python pandas tqdm tifffile
 ```
 
 ## Quick Start
